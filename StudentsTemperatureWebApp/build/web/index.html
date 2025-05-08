@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <meta charset="UTF-8">
+    <title>Students Temperature Web Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset & General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Students Temperature Web Application</h1>
+        <nav>
+            <a href="student_form.html" title="Submit Temperature">Submit Temperature</a>
+            
+            <a href="about.html" title="About Us">About</a>
+            <a href="contact.html" title="Contact Us">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome!</h2>
+        <p>This system allows students to record their daily body temperature and basic details securely.</p>
+
+        <div class="buttons">
+            <a href="student_form.html" class="btn">Submit Your Temperature</a>
+            <a href="admin_login.html"  class="btn">Admin LogIn</a>
+             
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Students Temperature Web Application</p>
+    </footer>
+</body>
+</html>

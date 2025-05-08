@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Delete Student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            /* General Body Styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            /* Main Content Styles */
+            main {
+                width: 100%;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 30px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 24px;
+                color: #333;
+            }
+
+            /* Form Container */
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            /* Form Elements Styles */
+            label {
+                font-size: 16px;
+                color: #555;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                padding: 10px 20px;
+                background-color: #ff4c4c;
+                color: white;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #e03e3e;
+            }
+
+            /* Footer Styles */
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            footer p {
+                margin: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <main>
+            <h1>Delete Student</h1>
+            <div>Enter the student number to delete:</div>
+            <form action="DeleteStudentServlet.do" method="POST" class="form">
+                <label for="id">Student Number:</label>
+                <input type="text" name="id" id="id" required>
+                 
+                <input type="submit" value="DELETE" class="btn">
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Students Temperature Web Application</p>
+        </footer>
+    </body>
+</html>

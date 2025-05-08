@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>Admin Login Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .home-link {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .home-link:hover {
+            color: #ffdd57;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="password"],
+    textarea {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+        .btn {
+            display: block;
+            width: 40%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+    </head>
+    <body>
+         <main>
+        <h2>Enter correct login details below:</h2>
+        <form action="AdminLoginSelvet.do" method="POST">
+             <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+
+             
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+             
+            <input type="submit" value="LogIn" class="btn">
+            <p>
+                Don't have an account? <a href="signup.jsp">SignUp</a>
+                    
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Students Temperature Web Application</p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+         <style>
+        /* Reset & General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        form.form {
+            background: white;
+            padding: 30px;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        form.form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        form.form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        form.form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <main>
+        <div>TODO write content</div>
+        <form action="EditStudentServlet.do" method="POST" class="form">
+            
+             <label for="id">Student Number:</label>
+            <input type="text" name="id" id="id" required>
+            
+            <label for="name">First Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" required>
+
+             
+ 
+
+            <input type="submit" value="Save Changes" class="btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Students Temperature Web Application</p>
+    </footer>
+    </body>
+</html>
